@@ -3,6 +3,9 @@
 @section('content')
 <h1>Cadastrar Livro</h1>
 
+<a href="{{ route('livros.index') }}">Voltar</a>
+<br/><br/>
+
 <form method="POST" action="{{ route('livros.store') }}">
     @csrf
     <label>Título:</label>
@@ -16,5 +19,5 @@
     <button type="submit">Cadastrar</button>
 </form>
 
-<a href="{{ route('livros.index') }}">Voltar</a>
+
 @endsection
